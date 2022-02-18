@@ -11,5 +11,3 @@ function theSectionSelectAllNav(PDO $db){
     }
     return $result;
 }
-
-var_dump (theSectionSelectAllNav($db));

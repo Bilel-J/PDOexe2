@@ -4,6 +4,7 @@
  * Chargement des dépendances
  */
 require_once "../config.php";
+require_once "../model/theSectionModel.php";
 
 /**
  * Connexion PDO
@@ -19,10 +20,12 @@ try {
 
 //var_dump($db);
 
+var_dump (theSectionSelectAllNav($db));
+
 /**
  * Routeur
  */
-require_once "../model/theSectionModel.php";
+
 
 /**
  * Nous ne sommes pas connectés

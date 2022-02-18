@@ -5,6 +5,11 @@
  */
 require_once "../config.php";
 require_once "../model/theSectionModel.php";
+<<<<<<< HEAD
+=======
+require_once "../model/theArticleModel.php";
+
+>>>>>>> 783d5868d9f5cce3d86b32d2b7f99fd166d3cea8
 
 /**
  * Connexion PDO
@@ -18,7 +23,9 @@ try {
     echo "<br>Message d'erreur : " . $e->getMessage();
 }
 
-//var_dump($db);
+$test = thearticleSelectAll($db);
+
+// var_dump($test);
 
 var_dump (theSectionSelectAllNav($db));
 
@@ -32,3 +39,7 @@ var_dump (theSectionSelectAllNav($db));
  */
 
 require_once "../controller/publicThearticleController.php";
+
+//chargement Model
+
+
